@@ -25,4 +25,4 @@ app.use('/user', userController);
 app.use('/login', loginController);
 app.use('/manage', manageController);
 
-var server=app.listen(5000,function() {});
+app.listen(process.env.PORT || 5000);
