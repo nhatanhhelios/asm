@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Manage</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <form>
+    <nav id="mysidemenu" class="navigation">
+  <ul class="mainmenu">
+    <a href="javascript:void(0)" class="close" onclick="closeSM()">&times;</a>
+    <li><a href="">Home</a>
+      <ul class="submenu">
+        <li><a href="/manage">Manage page</a></li>
+        <li><a href="/">Homepage</a></li>
+      </ul>
+    </li>
+    </li>
+    <li><a href="">Users</a>
+      <ul class="submenu">
+        <li><a href="/user">Manage</a></li>
+        <li><a href="/user/add">Add</a></li>
+      </ul>
+    </li>
+    <li><a href="">Products</a>
+      <ul class="submenu">
+        <li><a href="/product">Manage</a></li>
+        <li><a href="/product/add">Add</a></li>
+      </ul>
+    </li>
+    <li><a href="/login">Logout</a></li>
+  </ul>
+</nav>
+<div class="content">
+        <div style="font-size: 50px; cursor: pointer; color: 5b5b5b" onclick="openSM()">&#9776;</div>
+    </div> 
+    <script type="text/javascript">
+       function openSM() {
+            document.getElementById("mysidemenu").style.width= "450px";
+            document.getElementById("content").style.marginLeft= "450px";
+        }
+       function closeSM() {
+            document.getElementById("mysidemenu").style.width= "0px";
+            document.getElementById("content").style.width= "0px";
+        }
+    </script>
+</form>
+    <h1 id="header">ATN MANAGEMENT<br/><span id="headerspan">SYSTEM</span></h1>
+</body>
+</html>

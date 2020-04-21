@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product detail</title>
+    <link rel="stylesheet" href="/css/indexprd.css">
+    <link rel="stylesheet" href="/css/table.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div id="banner">
+  <div id="banner_text">
+   <h1>ATN Shop</h1>
+   <h3><i>Toys for teenagers</i></h3>
+  </div>
+</div>
+<nav id="mysidemenu" class="navigation">
+  <ul class="mainmenu">
+    <a href="javascript:void(0)" class="close" onclick="closeSM()">&times;</a>
+    <li><a href="/">Home</a></li>
+    <li><a href="">Categories</a>
+      <ul class="submenu">
+        <li><a href="/lego">Lego</a></li>
+        <li><a href="/boardgame">Board game</a></li>
+      </ul>
+    </li>
+    <li><a href="/login">Admin</a></li>
+    <li><a href="">Contact</a>
+      <ul class="submenu">
+        <li><a href="http://facebook.com" target="_blank">Facebook</a></li>
+        <li><a href="http://instagram.com" target="_blank">Instagram</a></li>
+      </ul>
+    </li>     
+  </ul>
+</nav>
+<div class="content">
+        <div style="font-size: 50px; cursor: pointer; color: 5b5b5b" onclick="openSM()">&#9776;</div>
+    </div> 
+    <script type="text/javascript">
+       function openSM() {
+            document.getElementById("mysidemenu").style.width= "450px";
+            document.getElementById("content").style.marginLeft= "450px";
+        }
+       function closeSM() {
+            document.getElementById("mysidemenu").style.width= "0px";
+            document.getElementById("content").style.width= "0px";
+        }
+    </script>
+
+  <!-- detail -->
+  <div id="main" style="margin-top: -5%">
+      <div class="content">
+      <center>
+        <div class="std_detail1">
+            <center>
+          <div class="std_info1">
+            <img src='../product/photo/{{product._id}}' name='picture' width="300" height="250"> 
+          </div> <br>
+            </center>
+          <div class="std_info2">
+           <table>
+               <tr>
+                   <th>Product details</th>
+                   <th>Description</th>
+               </tr>
+            <tr>
+            <td style="width:300px;">
+            Name: {{product.Name}} <br> <br>
+            Price: {{product.Price}} <br> <br>
+            Category: {{product.Category}} <br> <br>
+            </td>
+            <td style="width:300px;"><p style="margin-top: -40%;">{{product.Description}}</p></td>
+            </tr>
+           </table>
+          </div>     
+        </div>
+    </center>
+    </div>
+  </div>
+</body>
+</html>

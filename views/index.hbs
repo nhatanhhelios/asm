@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shop</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/indexprd.css">
+</head>
+<body>
+<div id="banner">
+  <div id="banner_text">
+   <h1>ATN Shop</h1>
+   <h3><i>Toys for teenagers</i></h3>
+  </div>
+</div>
+<nav id="mysidemenu" class="navigation">
+  <ul class="mainmenu">
+    <a href="javascript:void(0)" class="close" onclick="closeSM()">&times;</a>
+    <li><a href="/">Home</a></li>
+    <li><a href="">Categories</a>
+      <ul class="submenu">
+        <li><a href="/lego">Lego</a></li>
+        <li><a href="/boardgame">Board game</a></li>
+      </ul>
+    </li>
+    <li><a href="/login">Admin</a></li>
+    <li><a href="">Contact</a>
+      <ul class="submenu">
+        <li><a href="http://facebook.com" target="_blank">Facebook</a></li>
+        <li><a href="http://instagram.com" target="_blank">Instagram</a></li>
+      </ul>
+    </li>     
+  </ul>
+</nav>
+<div class="content">
+        <div style="font-size: 50px; cursor: pointer; color: 5b5b5b" onclick="openSM()">&#9776;</div>
+    </div> 
+    <script type="text/javascript">
+       function openSM() {
+            document.getElementById("mysidemenu").style.width= "450px";
+            document.getElementById("content").style.marginLeft= "450px";
+        }
+       function closeSM() {
+            document.getElementById("mysidemenu").style.width= "0px";
+            document.getElementById("content").style.width= "0px";
+        }
+    </script>
+
+    <!--display-->
+    <form>
+    <div id="site_content">
+    <div id="contents">
+      {{# each product}}
+        <div class="jm-item">
+	        <div class="jm-item-wrapper">
+		      <div class="jm-item-image">
+			      <img src="../product/photo/{{_id}}" style="width:300px;" />
+			      <span class="jm-item-overlay"> </span>
+			      <div class="jm-item-button"><a href="/prddetail?id={{_id}}">View</a></div>
+		      </div>
+		      <div class="jm-item-title">{{Name}}</div>
+	        </div>
+        </div>
+      {{/each}}
+      </div>
+    </div>
+    </div>
+    </form>
+</body>
+</html>

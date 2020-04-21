@@ -1,0 +1,115 @@
+.tbl {
+    border-collapse: collapse;
+    width: 70%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.tbl, th, td {
+    border: 1px solid #ddd;
+}
+
+th {
+    font-family: 'inconsolata', monospace;
+    font-size: 25px;
+    height: 25px;
+    text-align: left;
+    background-color: #e85e4f;
+    color: white;
+}
+
+td {
+    font-family: 'inconsolata', monospace;
+    font-size: 17px;
+    height: 50px;
+    vertical-align: bottom;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.frm_inline {
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'inconsolata', monospace;
+    display: inline-block;
+	padding: 10px 20px;
+	color: white;
+	background-color: #d8c3a5;
+	border-radius: 25px;
+	text-decoration: none;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.frm_inline input[type="submit"] {
+    color: white;
+    font-family: 'inconsolata', monospace;
+    font-size: 16px;
+    background-color: #d8c3a5;
+    outline: none;
+    border: none;
+    font-weight: bold;
+}
+
+.frm_inline input[type="submit"]:hover, .frm_inline:hover {
+    color: #e85e4f;
+}
+
+/*Search-bar*/
+.warp{
+    width: 10%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin-left: 980px;
+}
+  
+.search_text {
+    width: 20%;
+    border: 3px solid #e85e4f;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-family: 'inconsolata', monospace;
+    font-size: 20px;
+    background-color:#f2f2f2;
+}
+  
+#search_btn {
+    width: 100px;
+    height: 36px;
+    border: 1px solid #e85e4f;
+    background: #e85e4f;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'inconsolata', monospace;
+    font-weight: bold;
+}
+  
+
+
+
+
+

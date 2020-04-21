@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update product</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/fieldset.css">
+</head>
+<body>
+    <center>
+<form style="width: fit-content; margin-top: 30px; " action="update" enctype="multipart/form-data" method="POST">
+	<fieldset>
+	<legend style="margin-right:5px;">Update product</legend>
+       <div class="legend_add">
+          <div>
+    <form>
+    <input type="hidden" name="id" value="{{product._id}}">
+    <p style="font-weight: bold; font-size: 18px;">Name</p> <input class="legend_text" type="text" name="name" value="{{product.Name}}">
+    <p style="font-weight: bold; font-size: 18px;">Price</p> <input class="legend_text" type="text" name="price" id="" value="{{product.Price}}">
+    <p style="font-weight: bold; font-size: 18px;">Category</p> <input class="legend_text" type="text" name="category" value="{{product.Category}}">
+    <p style="font-weight: bold; font-size: 18px;">Image</p> <img src='/product/photo/{{_id}}' alt="" width="250px" height="200px">
+    <input type="file" name="picture" accept="image/*" style="font-family: 'inconsolata', monospace; font-size:17px;">
+    <p style="font-weight: bold; font-size: 18px;">Description</p> <input class="legend_text" type="text" name="description" value="{{product.Description}}">
+    <br><br>
+    <input style="margin-left: 1%;" class="legend_btn" type="submit" value="Update">
+    </form>
+    </div>
+       </div>
+    </fieldset>
+    </form>
+</center>
+</body>
+</html>

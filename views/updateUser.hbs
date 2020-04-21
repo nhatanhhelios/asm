@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update user</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/fieldset.css">
+</head>
+<body>
+    <center>
+<form style="width: fit-content; margin-top: 30px; " action="update" method="POST">
+	<fieldset>
+	<legend style="margin-right:5px;">Update user</legend>
+       <div class="legend_add">
+          <div>
+		     <form>
+    <input type="hidden" name="id" value="{{user._id}}">
+    <p style="font-weight: bold; font-size: 18px;">Username</p> <input class="legend_text" type="text" name="username" value="{{user.Username}}">
+    <p style="font-weight: bold; font-size: 18px;">Password</p> <input class="legend_text" type="text" name="password" id="" value="{{user.Password}}">
+    <p style="font-weight: bold; font-size: 18px;">Name</p> <input class="legend_text" type="text" name="name" value="{{user.Name}}">
+    <p style="font-weight: bold; font-size: 18px;">Age</p> <input class="legend_text" type="text" name="age" value="{{user.Age}}">
+    <p style="font-weight: bold; font-size: 18px;">Gender</p> <input class="legend_text" type="text" name="gender" value="{{user.Gender}}">
+    <p style="font-weight: bold; font-size: 18px;">Email</p> <input class="legend_text" type="text" name="email" value="{{user.Email}}">
+    <p style="font-weight: bold; font-size: 18px;">Phone</p> <input class="legend_text" type="text" name="phone" value="{{user.Phone}}">
+    <br><br>
+    <input style="margin-left: 1%;" class="legend_btn" type="submit" value="Update">
+    </form> 
+          </div>
+       </div>
+    </fieldset>
+</form>
+</center>
+</body>
+</html>

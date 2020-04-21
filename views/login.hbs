@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin login</title>
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+    <section>
+    	<div class="form">
+    		<div class="frm_warn">    			
+    			<h2>Admin login</h2>
+    			<p>This is the login page for admin to edit the necessary information of the website</p>
+    			<h2>Warning</h2>
+    			<p>If you are not an admin and have no authority, please press the "Go back" button to leave</p>
+    			<a href="/">Go back</a>
+    		</div>
+    		<div class="frm_login">
+    			<h1>Sign in</h1>
+    		    <form action="login/ok" method="POST">
+		            <input type="text" name="username" placeholder="Username" required=""> <br> <br>
+		            <input type="password" name="password" placeholder="Password" required=""> <br> <br>
+		            <input type="submit" id="inp_login" value="Login">
+	            </form>
+    		</div>
+    	</div>
+    </section>
+</body>
+</html>
